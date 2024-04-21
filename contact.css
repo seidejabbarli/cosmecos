@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:  #000000;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+ /* header stars */
+Header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo>a>img{
+    width: 140px;
+    height: 15px;
+}
+header>nav>ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header>nav>ul>li>a{
+    text-decoration: none;
+    font-size: 15px;
+    margin-right:25px ;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    color: #232323;
+    transition: 0.5s;
+    cursor:pointer
+}
+.head-link:hover{
+    color: #eaaa85 !important;
+}
+
+
+
+.icons>i{
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    color: #232323;
+    cursor:pointer;
+    transition: .3s
+}
+
+.icons>i:hover{
+    color:#eaaa85
+}
+
+/* header ends */
+
+/* header-cainter stars */
+
+.about-container{
+    width: 100%;
+    height: 500px;
+    background-image: url(./assets/about-header-bg.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.about-container>div>h2{
+    font-size: 35px;
+    font-family: Quintessential, sans-serif;
+    font-weight: 400;
+    color: #eaaa85;
+}
+.about-container>div>h1{
+    font-family: Raleway, sans-serif;
+    font-weight: 200;
+    font-size: 80px;
+    color: #232323;
+}
+.beauty{
+    color: #f5e0d2;
+    font-family: Quintessential, sans-serif;
+    font-weight: 400;
+    font-size: 200px;
+}
+ /* header-container ends */
+
+/* r*************************rengini soldurmaq */
+ .map-section{
+    padding-top: 60px;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 70px;
+ }
+ .map-section>iframe{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+ }
+
+
+ /* register section stars */
+
+ .register-part{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 60px;
+ }
+
+ .left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ }
+
+ .left-side>h2{
+        text-transform: uppercase;
+        color: #232323;
+        font-size: 26px;
+        font-weight: 400;
+        font-family: Raleway, sans-serif;
+ }
+
+  .left-side>p{
+        font-weight: 300;
+        font-family: "Nunito Sans", sans-serif;
+        color: #616161;
+        font-size: 16px;
+  }
+
+  /* borderi sorus ****************************** */
+
+  .left-side>input, textarea{
+    border: 1px solid #ccc;
+  }
+  textarea{
+    padding-left: 25px;
+    padding-top: 25px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+  }
+  .message:hover {
+    outline: #ccc;
+    border: 1px solid  #333 !important;
+  }
+
+.input-divs{
+    display: flex;
+    gap: 20px;
+}
+
+  .input-divs>input{
+    transition: 0.3s;
+    border: 1px solid #ccc ;
+     padding: 14px 25px;
+     width: 300px;
+  }
+  .input-divs>input:hover{
+    outline: #ccc;
+    border: 1px solid  #333 !important;
+  }
+
+
+   .left-side>input{
+    transition: 0.3s;
+    padding: 14px 30px;
+   }
+   .left-side>input:hover{
+    outline: #ccc;
+    border: 1px solid  #333 !important;
+   }
+
+   .left-side>button{
+    background-color: white;
+    width: 160px;
+    height: 56px;
+    color: #232323;
+    font-family: Raleway, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    border: 1px solid #232323;
+    cursor: pointer;
+    transform: translateY(0);
+}
+
+.left-side>button::before{
+    content: "";
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 0%;
+    background-color:#232323 ;
+    z-index: -1;
+    transition: 0.8s;
+    bottom:0;
+}
+
+
+.left-side>button:hover {
+    color: white;
+  }
+
+.left-side>button:hover::before{
+    height: 100%
+}
+
+
+
+/* footer stars */
+footer{
+    width: 100%;
+    height: 360px;
+    background-color: #1e1e1e;
+    color: white;
+    background-image: url(./footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.part-1{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+}
+
+.part-1>img{
+    width: 143px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.part-1>p{
+    display: inline;
+    width: 270px;
+    line-height: 30px;
+    color: #b1b0b0;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: star;
+    align-items:center;
+    gap: 30px;
+}
+
+.footer-icon {
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 1px solid #444;
+    padding: 8px;
+    transition: 0.5s;
+}
+
+.footer-icon-fb{
+    padding: 8px 11px;
+}
+
+.footer-icon-ln{
+    padding:8px 9px ;
+}
+.footer-icon-insta {
+    padding:8px 9px ;
+}
+
+.footer-icon:hover{
+    background-color: #444 ;
+}
+
+.part-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-title{
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Raleway, sans-serif;
+}
+
+.part2-text{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.part2-text:hover{
+   color: #eaaa85;
+}
+
+.part-3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.part-3>input{
+    background-color: #1e1e1e;
+    border: none;
+    padding: 15px 0;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    color: #fff;
+    outline: 0 !important;
+}
+
+.part-3>input :hover{
+    border:1px solid #1e1e1e;
+}
+
+
+
+.part-3>button{
+    cursor: pointer;
+    padding: 19px 38px;
+    position: relative;
+    text-align: center;
+    transition: all .3s;
+    border: 1px solid  #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 13px;
+    background-color: #1e1e1e;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    transform: translateY(0);
+}
+
+
+
+.part-3>button::before{
+    content: "";
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 0%;
+    background-color:white ;
+    z-index: -1;
+    transition: 0.8s;
+    bottom:0;
+}
+
+
+.part-3>button:hover {
+    color: black;
+  }
+
+.part-3>button:hover::before{
+    height: 100%
+}
+
+.part-4{
+    margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    justify-content: flex-start;
+}
+
+.part-4>p{
+    line-height: 30px;
+    color: #b1b0b0;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* footer ends */
+
+
+
+
